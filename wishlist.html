@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/wko3ka42ewzfyanrvm9h" type="image/x-icon">
+    <title>Cart</title>
+    <style>
+        #fav
+        {
+            width: 98%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            
+        }
+        #img>img
+        {
+          height: 80px;
+          width: 80px;
+          padding-right:15px;
+        }
+        #head
+        {
+            padding-left:15px ;
+        }
+        #wish
+        {
+            margin-top: 20px;
+            width: 60%;
+         
+        }
+    
+        #box3
+        {
+          border: 1px solid grey;
+          width: 60%;
+        }
+        
+        #card
+        {
+         
+          margin-top: 5px;
+          padding-left: 10px;
+          display: flex;
+          border-bottom: 1.5px solid rgb(190, 186, 186);
+       }
+        #symbole::before{
+  content: ' \20b9';
+  font-weight: bold;
+}
+#symbole
+{
+  font-weight: bold;
+}
+#card>img
+{
+  height: 150px;
+  width: 100px;
+  border: 1px solid black;
+  
+}
+#box2
+{
+  margin-left: 10px;
+}
+#box4
+{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom:15px;
+  padding-top: 15px;
+}
+       
+    </style>
+  </head>
+  <body>
+    <div id="fav">
+        <div id="head">
+        <h1>Favourite </h1>
+        <h4>View your most wanted products.</h4>
+        </div>
+        <div id="img">
+        <img src="https://th.bing.com/th/id/R.b4226e8f8962a16fc52cb90046f427c0?rik=BSwhqg3em1QCSg&riu=http%3a%2f%2fwww.newdesignfile.com%2fpostpic%2f2015%2f04%2fwhite-heart-symbol_21028.jpg&ehk=RjJd2qU8PpQ2UkfzzTV%2f3lmAfs%2fe53q1mykvPwotNf4%3d&risl=&pid=ImgRaw&r=0">
+        </div>
+    </div>
+    <div id="wish">
+
+    </div>
+</body>
+</html>  
+<script>
+    let arr4=JSON.parse(localStorage.getItem("whishlist"))||[];
+    arr4.map(function(ele,index)
+  {    
+  
+   // console.log(count);
+       let box= document.createElement("div");
+       box.setAttribute("id","card")
+       let image=document.createElement("img");
+       image.setAttribute("src",ele.image_url);
+       let name1=document.createElement("p");
+       name1.innerText=ele.name;
+       name1.style.fontWeight="bold";
+       let prc=document.createElement("p");
+      let rete= prc.innerText=`${ele.price}`;
+      prc.setAttribute("id","symbole");
+     // pricelist.push(rete);
+     let colo=document.createElement("p");
+     let spn=document.createElement("span");
+     spn.innerText="Colour:"
+     spn.style.color="grey";
+     let spn1=document.createElement("span");
+     spn1.innerText=`${ele.Colour}`;
+     colo.append(spn,spn1);
+     let siz=document.createElement("p");
+     let spn2=document.createElement("span");
+     spn2.innerText="Size:"
+     spn2.style.color="grey";
+     let spn3=document.createElement("span");
+     spn3.innerText=`${ele.size}`;
+     siz.append(spn2,spn3);
+     
+        let btn=document.createElement("button")
+       btn.innerText="Remove";
+       btn.style.border="none"
+       btn.style.color="blue";
+       btn.style.backgroundColor="white";
+       btn.addEventListener("click",function()
+       {
+          
+            deleteCart(ele,index);
+       });
+    //    let btn2=document.createElement("button")
+    //    btn2.innerText="Move to favourites";
+    //    btn2.style.border="none"
+    //    btn2.style.color="blue";
+    //    btn2.style.backgroundColor="white";
+    //    btn2.addEventListener("click",function()
+    //    {
+          
+    //       addtoFavourite(ele,index);
+    //    });
+       let box2= document.createElement("div");
+        box2.setAttribute("id","box2");
+        box2.append(name1,prc,colo,siz);
+        box.append(image,box2);
+        let box4=document.createElement("div");
+        box4.append(btn);
+        box4.setAttribute("id","box4");
+        let box3= document.createElement("div");
+        box3.append(box,box4);
+        box3.setAttribute("id","box3");
+        document.querySelector("#wish").append(box3);
+
+  });
+  deleteCart=(ele,index)=>
+  {
+    
+    arr3.splice(index,1);
+    localStorage.setItem("whishlist",JSON.stringify(arr4));
+    window.location.reload();
+
+ }
+</script>  

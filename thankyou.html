@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You Page</title>
+    <link rel="shortcut icon" href="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/wko3ka42ewzfyanrvm9h" type="image/x-icon">
+    <style>
+       #img{
+            width: 40%;
+            margin: auto;
+            text-align: center;
+            border: 1px solid transparent;
+        }
+
+        #img img {
+            width: 90%;
+        }
+
+        #buttonDiv {
+            width: 40%;
+            margin: auto;
+            text-align: center;
+            margin-top:10px ;
+            /* border: 1px solid red; */
+            /* background-color: pink; */
+        }
+        #buttonDiv button{
+            background-color: black;
+            color: whitesmoke;
+            border-radius: 5px;
+            height: 40px;
+            width: 280px;
+            padding: 5px;
+            cursor: pointer;
+            /* font-size: 20px; */
+        }
+        #buttonDiv button:hover{
+            background-color: rgb(59, 59, 59);
+        }
+
+      
+    </style>
+</head>
+
+<body>
+    <div id="img">
+        <img src="https://media.istockphoto.com/vectors/vector-typography-for-banner-poster-invitation-greeting-postcard-for-vector-id1063232648?k=20&m=1063232648&s=612x612&w=0&h=uAe-h2LHZNyjwP_povu1Ll6UXphzG5fJBqyyyMMPf-U="
+            alt="Image Not found">
+    </div>
+    <div id="buttonDiv">
+        <button>Continue Shopping</button>
+    </div>
+</body>
+
+</html>
+
+<script>
+    document.querySelector("button").addEventListener("click", function () {
+        window.location.href = "index.html";
+    })
+</script>

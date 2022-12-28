@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./women.css">
+    <link rel="stylesheet" href="./stylesheets/navbar.css">
+    <link rel="stylesheet" href="./stylesheets/footer.css">
+    <link rel="shortcut icon" href="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/wko3ka42ewzfyanrvm9h" type="image/x-icon">
+    <title>women-page</title>
+</head>
+<body>
+    <div id="offerBanner">
+        <p class="red">15% off for new Customers </p> 
+        <p>|</p> 
+        <p class="red">Selected full-price items</p>
+    </div>
+    <!-- ========================================= -->
+    <div id="navbarContainer">
+        <div id="navbox1">
+            <div class = "navbox1Cards">
+                <div class="div1">
+                    <p onclick="takeToWomen()">Women</p>
+                    <p onclick="takeToMen()">Men</p>
+                    <p>Kids</p>
+                </div>
+                <div id="logoDiv">
+                    <img src="./images/logo.png" alt="logo_farfrtch">
+                </div>
+                <div id="icons">
+                    <div class="account"><img src="./images/icons/person_black_36dp.svg" alt="account"><p id="userNameDisplay"></p></div>
+                    <div class="wish_bag">
+                        <img src="./images/icons/favorite_border_black_36dp.svg" alt="wishlist">
+                        <div class="shopBag">
+                            <img onclick="checkUser()" id="shoppingBag" src="./images/icons/shopping_bag_black_36dp.svg" alt="bag">
+                            <div id="bagCount">0</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class = "navbox1Cards">
+                <div id="sections">
+                    <div class="sectionDivs"><p>New In</p></div>
+                    <div class="sectionDivs"><p>Shop By</p></div>
+                    <div class="sectionDivs"><p>Brands</p></div>
+                    <div class="sectionDivs"><p>Clothing</p></div>
+                    <div class="sectionDivs"><p>Shoes</p></div>
+                    <div class="sectionDivs"><p>Sneakers</p></div>
+                    <div class="sectionDivs"><p>Bags</p></div>
+                    <div class="sectionDivs"><p>Accessories</p></div>
+                    <div class="sectionDivs"><p>Watches</p></div>
+                    <div class="red"> <p>Sale</p></div>
+                </div>
+                <div id="searchDiv">
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main_box_1">
+        <div id="first_box_img">
+            <img src="https://cdn-static.farfetch-contents.com/cms-cm10/caas/v1/media/3724886/data/818e028e77b38e070742798e39d85915/1x1_messaging-side/637/data.jpeg">
+        </div>
+        <div id="text_first_box">
+            <h1>ENJOY 20% OFF, <br> PLUS FREE <br> SHIPPING</h1>
+                <p>For a limited time, you can shop the world's best selection of designer pieces with 20% off and free shipping. Selected full-price and sale items; discount automatically applied at checkout</p>
+                <button><a href="./womens_product.html">Shop Now</a></button>
+        </div>
+    </div>
+    
+        
+    <div id="main_box_2">
+        <div id="text_second_box">
+            <h1>150+ new shoes for every occasion</h1>
+            <p>The elevated mule. The disco heel. The modern loafer. Meet the footwear style of the season.</p>
+            <button><a href="./womens_product.html">Shop Now</a></button>
+        </div>
+        <div id="second_box_img">
+            <img src="https://cdn-static.farfetch-contents.com/cms-cm10/caas/v1/media/3725164/data/230fe5b8cfcd3d62be92716725f05af1/1x1_messaging-side/637/data.jpeg">
+        </div>
+    </div>
+
+
+
+    <div id="main_box_3">
+        <div id="third_box_img">
+            <img src="https://cdn-static.farfetch-contents.com/cms-cm10/caas/v1/media/3705410/data/33cbde5ebe757307bfc7babd0c734cab/1x1_two-columns/637/data.jpeg">
+            <div id="text_third_box">
+                <h2>JUST IN: MARC JACOBS' NEW CULT DROP</h2>
+                <p>From striking seperates to impactful bags, Marc Jacobs applies its bold <br> signature to sculputure denim pieces. Discover the Monogram collection here.</p>
+            </div>
+        </div>
+        <div id="forth_box_img1">
+            <img src="https://scontent.fbom15-1.fna.fbcdn.net/v/t1.6435-9/165053938_5545048145513253_2645306310884272088_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=C_mHETrGu-QAX-jWd1J&_nc_ht=scontent.fbom15-1.fna&oh=00_AT-7WT1lRMW6AHycJHyX_T-9n8WoMuohTnHRaEVAxtW3Nw&oe=632AB7A0" alt="">
+            <h1>BALENCIAGA</h1>
+            
+        </div>
+    </div>
+
+
+
+    <div id="main_box_4">
+        <h2>New in: hand-picked daily from the world’s best brands and boutiques</h2>
+        <button><a href="./womens_product.html">Shop Now</a></button>
+    </div>
+    <div id="main_box_5">
+        <div class="products_box_5">
+            <img src="https://cdn-images.farfetch-contents.com/17/91/58/58/17915858_41169203_600.jpg">
+            <div class="image_info">
+                <p>NEW SEASON</p>
+                <p>Amina Muaddi</p>
+                <p>Lupita 110mm mules</p>
+                <p>$1,234</p>
+            </div>
+        </div>
+        <div class="products_box_5">
+            <img src="https://cdn-images.farfetch-contents.com/18/91/97/07/18919707_41133201_600.jpg">
+            <div class="image_info">
+                <p>NEW SEASON</p>
+                <p>TOM FORD</p>
+                <p>logo-waistband velvet leggings</p>
+                <p>$485</p>
+            </div>
+        </div>
+        <div class="products_box_5">
+            <img src="https://cdn-images.farfetch-contents.com/18/03/09/21/18030921_41131827_600.jpg">
+            <div class="image_info">
+                <p>NEW SEASON</p>
+                <p>Taller Marmo</p>
+                <p>Mambo cold-shoulder halterneck<br>kaften dress</p>
+                <p>$1,566</p>
+            </div>
+        </div>
+        <div class="products_box_5">
+            <img src="https://cdn-images.farfetch-contents.com/18/03/60/34/18036034_41165465_600.jpg">
+            <div class="image_info">
+                <p>NEW SEASON</p>
+                <p>Alexandre Vauthier</p>
+                <p>houndstooth-pattern double-breasted<br>blazer</p>
+                <p>$3,734</p>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="main_box_6">
+        <div id="text_box_6">
+            <h1>NEW: THE INTERGALATIC PLANETARY COLLECTION</h1>
+            <p>Shop Versace Jeans Culture</p>
+        </div>
+        <div id="image_box_6">
+            <img src="https://cdn.shoplightspeed.com/shops/622932/files/27114455/768x1024x1/paloma-wool-twister-knitted-sweater-orange.jpg">
+        </div>
+    </div>
+    
+    <h2 id="mid_tag_">This week’s highlights</h2>
+    <div id="main_box_7">
+        <div class="image_box_7">
+            <img src="https://cdn-static.farfetch-contents.com/cms-cm10/caas/v1/media/3725188/data/403387d322ac79361331f876cf484fea/3x4_three-columns/480/data.jpeg">
+            <div class="text_box_7">
+                <p>ISABEL MARANT</p>
+                <p>Florals to love, season after season</p>
+            </div>
+        </div>
+        <div class="image_box_7">
+            <img src="https://cdn-static.farfetch-contents.com/cms-cm10/caas/v1/media/3725170/data/90cd39390e9c3fa137b78e47b76d6b35/3x4_three-columns/480/data.jpeg">
+            <div class="text_box_7">
+                <p>THE SPORTS LUXE UPDATE</p>
+                <p>Raise the game with Miu Miu and more</p>
+            </div>
+        </div>
+        <div class="image_box_7">
+            <img src="https://cdn-static.farfetch-contents.com/cms-cm10/caas/v1/media/3725180/data/d82c235797f517e686d1d13ea03a00fa/3x4_three-columns/480/data.jpeg">
+            <div class="text_box_7">
+                <p>GANNI</p>
+                <p>The latest from the Copenhagen favorite</p>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div id="main_box_8">
+        <h2>Discover: the expressionist edit</h2>
+        <button><a href="./womens_product.html">Shop Now</a></button>
+    </div>
+
+    <div id="main_box_9">
+        <div class="products_box_9">
+            <img src="https://cdn-images.farfetch-contents.com/18/47/56/27/18475627_39862370_600.jpg">
+            <div class="image_info_2">
+                <p>NEW SEASON</p>
+                <h4>Dolce & Gabbana</h4>
+                <p>graffiti-print hooded jacket</p>
+                <p>$1,275</p>
+            </div>
+        </div>
+        <div class="products_box_9">
+            <img src="https://cdn-images.farfetch-contents.com/18/64/09/46/18640946_41092198_600.jpg">
+            <div class="image_info_2">
+                <p>NEW SEASON</p>
+                <h4>Balenciaga</h4>
+                <p>mini Neo Classic City tote</p>
+                <p>$1,730</p>
+            </div>
+        </div>
+        <div class="products_box_9">
+            <img src="https://cdn-images.farfetch-contents.com/18/89/88/83/18898883_41078997_600.jpg">
+            <div class="image_info_2">
+                <p>NEW SEASON</p>
+                <h4>Coperni</h4>
+                <p>hybrid flared trousers</p>
+                <p>$1,338</p>
+            </div>
+        </div>
+        <div class="products_box_9">
+            <img src="https://cdn-images.farfetch-contents.com/18/62/10/43/18621043_40304024_600.jpg">
+            <div class="image_info_2">
+                <p>NEW SEASON</p>
+                <h4>The Attico</h4>
+                <p>Devon glittered sandals</p>
+                <p>$2,001</p>
+            </div>
+        </div>
+    </div>
+   <div id="footer"></div>
+
+    
+</body>
+</html>
+<script src="./women.js"></script>
+<script src="./scripts/navbar.js"></script>
+<script src="./scripts/navbar-footer.js"></script>

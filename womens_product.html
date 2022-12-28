@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/wko3ka42ewzfyanrvm9h" type="image/x-icon">
+    <link rel="stylesheet" href="./women_product.css">
+    <link rel="stylesheet" href="./stylesheets/navbar.css">
+    <link rel="stylesheet" href="./stylesheets/footer.css">
+    <title> Women 2018 - Farfetch</title>
+</head>
+<body>
+  <div id="offerBanner">
+    <p class="red">15% off for new Customers </p> 
+    <p>|</p> 
+    <p class="red">Selected full-price items</p>
+</div>
+<!-- ========================================= -->
+<div id="navbarContainer">
+    <div id="navbox1">
+        <div class = "navbox1Cards">
+            <div class="div1">
+                <p onclick="takeToWomen()">Women</p>
+                <p onclick="takeToMen()">Men</p>
+                <p>Kids</p>
+            </div>
+            <div id="logoDiv">
+                <img src="./images/logo.png" alt="logo_farfrtch">
+            </div>
+            <div id="icons">
+                <div class="account"><img src="./images/icons/person_black_36dp.svg" alt="account"><p id="userNameDisplay"></p></div>
+                <div class="wish_bag">
+                    <img src="./images/icons/favorite_border_black_36dp.svg" alt="wishlist">
+                    <div class="shopBag">
+                        <img onclick="checkUser()" id="shoppingBag" src="./images/icons/shopping_bag_black_36dp.svg" alt="bag">
+                        <div id="bagCount">0</div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class = "navbox1Cards">
+            <div id="sections">
+                <div class="sectionDivs"><p>New In</p></div>
+                <div class="sectionDivs"><p>Shop By</p></div>
+                <div class="sectionDivs"><p>Brands</p></div>
+                <div class="sectionDivs"><p>Clothing</p></div>
+                <div class="sectionDivs"><p>Shoes</p></div>
+                <div class="sectionDivs"><p>Sneakers</p></div>
+                <div class="sectionDivs"><p>Bags</p></div>
+                <div class="sectionDivs"><p>Accessories</p></div>
+                <div class="sectionDivs"><p>Watches</p></div>
+                <div class="red"> <p>Sale</p></div>
+            </div>
+            <div id="searchDiv">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="product_box_1">
+      <div id="women"><p>Women Home</p></div>
+        
+        <h1>ENJOY 20% OFF SELECTED FULL-PRICE AND SALE <br>ITEMS</h1>
+        <p>For a limited time only, shop the world’s finest designers with 20% off and get free shipping. T&Cs apply; read them<br> here.</p>
+    </div>
+    <div id="sort_text_filter">
+      <div class="text_filter">
+        <p>Filter by</p>
+      </div>
+      <div class="dropdown_main_">
+        <div class="select_">
+          <span class="selected_">Sort by</span>
+          <div class="caret_"></div>
+        </div>
+        <ul class="menu_2_">
+          <li onclick="hightolow()" id="sort-hl">Price: low to high</li>
+          <li onclick="lowtohigh()" id="sort-lh">Price: high to low</li>
+        </ul>
+      </div>
+    </div>
+    <div id="product_box_2">
+        <div id="sidebar_box_2">
+            <!-- 1st -->
+            <div class="dropdown_main">
+                <div class="select">
+                  <span class="selected">Category</span>
+                  <div class="caret"></div>
+                </div>
+                <ul class="menu" id="selected_option">
+                  <li id="bag" text="Bag">Bags</li>
+                  <li id="clothing">clothing</li>
+                  <li id="shoes">Shoes</li>
+                </ul>
+              </div>
+              <!-- 2nd -->
+              <div class="dropdown_main">
+                <div class="select">
+                  <span class="selected">Brand</span>
+                  <div class="caret"></div>
+                </div>
+                <ul class="menu" id="brand">
+                  <li value="Baggit">baggit</li>
+                  <li value="Ralph Lauren">Ralph Lauren</li>
+                  <li value="Spark">Spark</li>
+                </ul>
+              </div>
+              <!-- 3rd -->
+              
+              <!-- 4th -->
+              <div class="dropdown_main">
+                <div class="select">
+                  <span class="selected">Color</span>
+                  <div class="caret"></div>
+                </div>
+                <ul class="menu" id="color">
+                  <li value="Black"><div id="black_color"></div>Black</li>
+                  <li value="Grey"><div id="grey_color"></div>Grey</li>
+                  <li value="White"><div id="white_color"></div>White</li>
+                  <li value="Pink"><div id="pink_color"></div>Pink</li>
+                  <li value="Brown"><div id="brown_color"></div>Brown</li>
+                  <li value="Purple"><div id="purple_color"></div>purple</li>
+                  <li value="Blue"><div id="blue_color"></div>Blue</li>
+                  <li value="Green"><div id="green_color"></div>Green</li>
+                </ul>
+              </div>
+              <!-- 5th -->
+              <div class="dropdown_main">
+                <div class="select">
+                  <span class="selected">Sale Discount</span>
+                  <div class="caret"></div>
+                </div>
+                <ul class="menu" id="discount">
+                  <li value="20">20%</li>
+                  <li value="30">30%</li>
+                  <li value="40">40%</li>
+                </ul>
+              </div>
+              <!-- 6th -->
+              <div class="dropdown_main">
+                <div class="select">
+                  <span class="selected">Price</span>
+                  <div class="caret"></div>
+                </div>
+                <ul class="menu">
+                  <div id = "price">
+                    <input placeholder="$25" id="min_value"/>
+                    <input placeholder="$15000" id="max_value" class="price_range"/>
+                  </div>
+                  
+                </ul>
+              </div>
+              <!-- 7th -->
+              <div class="dropdown_main">
+                <div class="select">
+                  <span class="selected">Conscious</span>
+                  <div class="caret"></div>
+                </div>
+                <ul class="menu" id="con">
+                  <li value="true">Conscious</li>
+                </ul>
+              </div>
+        </div>
+        <div id="container_to_append"></div>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>
+<script src="./women_product.js"></script>
+<script src="./scripts/navbar.js"></script>
+<script src="./scripts/navbar-footer.js"></script>

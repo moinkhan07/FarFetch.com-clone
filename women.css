@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "farfetch";
+}
+@font-face {
+    font-family: "farfetch";
+    src: url(./fonts/Farfetch\ Basis\ Regular.ttf) format("truetype");
+}
+
+#main_box_9>.products_box_9{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+#main_box_9>.products_box_9>img{
+    width: 230px;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    padding: 30px 20px 0 20px;
+    margin-bottom: 10px;
+}
+.image_info_2>p{
+    font-size: 13px;
+    color: rgb(67, 66, 66);
+    margin-bottom: 4px;
+}
+.image_info_2>p+p{
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+.image_info_2>p+p+p{
+    font-size: 15px;
+    color: rgb(33, 33, 33);
+    font-weight: lighter;
+    margin-bottom: 30px;
+}
+#red{
+    color: red;
+}
+
+
+#main_box_1{
+    width: 90%;
+    margin :auto;
+    margin-top: 50px;
+    display: flex;
+}
+#first_box_img>img{
+    cursor: pointer;
+    width: 600px;
+}
+#first_box+img{
+    width: 700px;
+}
+#text_first_box{
+    width: 44%;
+    height: 150px;
+    text-align: center;
+    margin: 50px auto;
+    color: rgb(28, 28, 28);
+}
+#text_first_box>h1{
+    font-size: 48px;
+    margin-bottom: 50px;
+}
+#text_first_box>p{
+    font-size: 23px;
+    margin-bottom: 50px;
+}
+#text_first_box>button{
+    font-size: 15px;
+    font-weight: bolder;
+    background-color: transparent;
+    width: 120px;
+    height: 40px;
+    outline: none;
+    border-radius: 3px;
+    border: none;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+    cursor: pointer;
+}
+#text_first_box>button:hover{
+    color: rgb(67, 67, 67);
+}
+
+
+#main_box_2{
+    width: 90%;
+    margin :auto;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+#second_box_img>img{
+    width: 600px;
+    cursor: pointer;
+}
+#text_second_box{
+    width: 43%;
+    height: 150px;
+    text-align: center;
+    margin: 150px auto;
+    color: rgb(28, 28, 28);
+}
+#text_second_box>h3{
+    font-size: 29px;
+    font-weight: lighter;
+    margin-bottom: 50px;
+}
+#text_second_box>p{
+    line-height: 25px;
+}
+#text_second_box>button{
+    font-size: 15px;
+    font-weight: bolder;
+    background-color: transparent;
+    width: 140px;
+    height: 40px;
+    outline: none;
+    border-radius: 3px;
+    border: none;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+#text_second_box>button:hover{
+    color: rgb(67, 67, 67);
+}
+
+
+
+#main_box_3{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin :auto;
+    margin-top: 80px;
+}
+#text_third_box{
+    width: 90%;
+}
+#text_third_box>p{
+    margin-bottom: 5px;
+    line-height: 22px;
+}
+#third_box_img>img{
+    width: 600px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+#third_box_img1>img{
+    width: 600px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#forth_box_img>img{
+    cursor: pointer;
+    max-height: 500px;
+}
+#forth_box_img1>img{
+    cursor: pointer;
+    max-height: 750px;
+}
+#forth_box_img>h1{
+    position :absolute;
+    top: 1720px;
+    left: 900px;
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    cursor: pointer;
+}
+#forth_box_img>p{
+    position :absolute;
+    top: 1800px;
+    left: 1000px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    font-weight: 520;
+}
+
+
+
+#main_box_4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 100px auto 40px auto;
+}
+#main_box_4>p{
+    font-size: 20px;
+}
+#main_box_4>button{
+    font-size: 15px;
+    font-weight: bolder;
+    background-color: transparent;
+    width: 100px;
+    height: 40px;
+    outline: none;
+    border-radius: 6px;
+    border: none;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+    cursor: pointer;
+}
+#main_box_4>button:hover{
+    color: rgb(67, 67, 67);
+}
+#main_box_5{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+#main_box_5>.products_box_5{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+#main_box_5>.products_box_5>img{
+    width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    padding: 30px 20px 0 20px;
+    margin-bottom: 10px;
+}
+.image_info>p{
+    font-size: 13px;
+    color: rgb(67, 66, 66);
+    margin-bottom: 4px;
+}
+.image_info>p+p{
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+.image_info>p+p+p{
+    font-size: 15px;
+    color: rgb(33, 33, 33);
+    font-weight: lighter;
+    margin-bottom: 30px;
+}
+
+
+#main_box_6{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+#text_box_6{
+    width: 450px;
+    height: 200px;
+    text-align: center;
+    cursor: pointer;
+    margin: auto;
+}
+#text_box_6>h1{
+    margin-bottom: 25px;
+}
+#text_box_6>p{
+    font-size: 18px;
+    color: rgb(38, 38, 38);
+}
+#image_box_6>img{
+    cursor: pointer;
+    max-height: 600px;
+    
+}
+
+#mid_tag_{
+    text-align: center;
+    margin-top: 50px;
+    font-weight: lighter;
+    font-size: 28px;
+    color: rgb(45, 45, 45);
+}
+#main_box_7{
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+    width: 90%;
+    justify-content: space-between;
+}
+.image_box_7>img{
+    width: 400px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.text_box_7>p+p{
+    margin-top: 5px;
+}
+
+
+#main_box_8{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 100px auto 40px auto;
+}
+#main_box_8>p{
+    font-size: 20px;
+}
+#main_box_8>button{
+    font-size: 15px;
+    font-weight: bolder;
+    background-color: transparent;
+    width: 100px;
+    height: 40px;
+    outline: none;
+    border-radius: 6px;
+    border: none;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+    cursor: pointer;
+}
+#main_box_8>button:hover{
+    color: rgb(67, 67, 67);
+}
+
+#main_box_9{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    cursor: pointer;
+    
+}
+
+
+/**************  Navbar  *****************/

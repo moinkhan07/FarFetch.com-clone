@@ -1,0 +1,107 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    /* text-align: center; */
+    font-family: "farfetch";
+}
+@font-face {
+    font-family: "farfetch";
+    src: url(/animated-governor-4742/fonts/Farfetch\ Basis\ Regular.ttf) format("truetype");  
+}
+
+#signUpContainer{
+    width: 27%;
+    height: 640px;
+    margin: auto;
+    margin-top: 40px;
+    /* margin-top: 10%; */
+    border: 2px solid #ddd;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+    padding: 10px;
+    
+}
+#signUpBox{
+    width: 95%;
+    height: 98%;
+    margin: auto;
+    /* border: 2px dotted red; */
+    padding:5px;
+    overflow: scroll;
+}
+.signUpTitle{
+    text-align: center;
+    /* border: 1px solid; */
+    height: 40px;
+    font-size: 25px
+}
+.underline{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.signuploginOptions{
+    display: flex;
+    /* border: 1px solid; */
+    gap: 20px;
+}
+.signInhr{
+    color: 1.1px solid #ddd;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.hoverSign:hover{
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+}
+.credInput{
+    /* border: 1px solid; */
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.credInput input{
+    width: 99%;
+    height: 40px;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+}
+.buttonbox{
+    /* border: 1px solid; */
+    display: grid;
+    gap: 10px;
+    margin-top: 10px;
+    grid-template-rows: repeat(5,1fr);
+}
+.buttonbox button{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    height: 50px;
+}
+.buttonbox button:hover{
+    cursor: pointer;
+}
+.buttonbox button+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid blue; */
+}
+.smlogin{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    /* width: 50px; */
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 10px;
+}
+.smlogin img{
+    width: 30px;
+}
+.smlogin:hover{
+    cursor: pointer;
+}

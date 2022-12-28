@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/wko3ka42ewzfyanrvm9h" type="image/x-icon">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+ #navbar
+    {
+       
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        height: 60px;
+       
+    }
+
+
+    h4{
+        font-size: 15px;
+        font-weight: bold;
+
+    }
+    .num
+    {
+        font-weight: bold;
+    
+    }
+    .con
+    {
+       display: flex;
+       justify-content:space-between;
+    }
+    .con1
+    {
+        display: flex;
+       justify-content:space-between; 
+    }
+    .material-symbols-outlined
+    {
+        padding-left: 30px;
+    }
+ .num1
+ {
+    padding-left: 10px;
+ }
+ .num3
+ {
+    padding-left: 15px;
+ }
+ #form1
+ {
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    gap: 20px;
+    /* border: 1px solid; */
+ }
+ #form1 div{
+    /* border: 1px solid blue; */
+    width: 50%;
+ }
+ #form1 input{
+    width: 100%;
+ }
+ #form2
+ {
+    display: flex;
+    width: 98%;
+    justify-content: space-between;
+    padding: 5px;
+    gap: 20px;
+
+ }
+ #form2 div{
+    /* border: 1px solid blue; */
+    width: 50%;
+ }
+ #form2 input{
+    width: 100%;
+ }
+ #form3
+ {
+    display: flex;
+    width: 98%;
+    justify-content: space-between;
+    padding: 5px;
+    gap: 20px;
+ }
+ #form3 div{
+    /* border: 1px solid blue; */
+    width: 50%;
+ }
+ #form3 input{
+    width: 100%;
+ }
+ input[type="text"],
+ input[type="Number"],
+ select
+ {
+    width: 100%;
+    padding: 12px;
+    border:1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+
+ }
+ #main1
+ {
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    /* border: 2px dotted red; */
+ }
+.chil
+ {
+    border: 5px solid black;
+    border-radius: 4px;
+ }
+.hrTransition{
+    width: 99%;
+    height: 5px;
+    background-color: black;
+    border-radius: 5px;
+}
+.main1Div{
+    /* border: 1px solid red; */
+    width: 30%;
+}
+#con3
+{
+    width: 87%;
+    display: flex;
+  
+    justify-content: space-between;
+    gap: 30px;
+    padding: 5px;
+    /* margin-left: 50px; */
+    margin: auto;
+    margin-top: 50px;
+}
+#con4
+{
+    color:black;
+}
+footer
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#222222 ;
+	color:#fff;
+    border: 1px solid black;
+    height: 60px;
+	/* text-align:center;
+	padding:1.0rem;
+	margin-top: 3%; */
+}
+footer>div{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+#summary
+{
+    /* font-size: 25px; */
+   
+    padding: 5px;
+    margin-left: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    /* justify-content: center; */
+}
+#main
+{
+    width: 70%;
+}
+#name
+{
+    width: 350px;
+}
+#name1
+{
+    width: 350px;
+   
+}
+#city
+{
+    width: 350px;
+}
+#state
+{
+    width: 350px;
+   
+}
+#pin
+{
+    width: 350px;
+}
+#number
+{
+    width: 350px;
+   
+}
+
+#summary>button
+{
+    background-color: black;
+    color: white;
+    width: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+  
+  
+
+}
+#cartDisplay
+{
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    padding: 5px;
+    margin-top: 20px;
+
+}
+#deliveryDetails{
+   
+    margin-top: 25px;
+    padding: 5px;
+}
+
+</style>
+</head>
+<body>
+    <div id="navbar">
+        <div class="con1">
+            <span class="material-symbols-outlined">
+                lock
+                </span>
+            <span class="num3">Secure checkout</span>
+        </div>
+        <div>
+            <h2>FARFETCH</h2>
+        </div>
+       
+        <div class="con">
+            <span class="num">Need Help?</span>
+            <span class="material-symbols-outlined">
+                call
+            </span>
+            <span class="num1" >+1 646 791 3768</span>
+        </div>
+    </div>
+    <div id="con3">
+    <div id="main">
+            <div id="main1">
+                <div class="main1Div">
+                    <p>1. Delivery</p>
+                    <hr class="hrTransition">
+                </div>
+            
+                <div class="main1Div">
+                    <p>2. Payment</p>
+                    <hr class="hrTransition"></div>
+            
+                <div class="main1Div">
+                    <p>3. Review </p>
+                    <hr class="hrTransition">
+                </div>
+            
+            </div>
+            <div id="deliveryDetails"> 
+                <h1>Edit delivery address</h1>
+                <p>* Required fields</p>
+                <form>
+                    <div id="form1">
+                        <div>
+                            <label for="FirstName">First name *</label><br>
+                            <input type="text" id="name">
+                        </div>
+                        <div>
+                            <label for="LastName">Last name *</label><br>
+                            <input type="text" id="name1">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="Country">Country / region *</label><br>
+                        <select id="country">
+                            <option>Afghanistan</option>
+                            <option></option>
+                            <option>Albania</option>
+                            <option>Argentina</option>
+                            <option>Bangladesh</option>
+                            <option>Brazil</option>
+                            <option>China</option>
+                            <option>Chile</option>
+                            <option>Denmark</option>
+                            <option>Dominica</option>
+                            <option>East Tiyamor</option>
+                            <option>Egypt</option>
+                            <option>Finland</option>
+                            <option>France</option>
+                            <option>Hungary</option>
+                            <option>Haiti</option>
+                            <option>India</option>
+                            <option>Island</option>
+                            <option>USA</option>
+                            <option>UK</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="address">Address *</label>
+                        <input type="text" id="address">
+                    </div>
+                    <div id="form2">
+                        <div>
+                            <label for="city">City *</label><br>
+                            <input type="text" id="city">
+                        </div>
+                        <div>
+                            <label for="state">State *</label><br>
+                            <input type="text" id="state">
+                        </div>
+                    </div>
+                    <div id="form3">
+                        <div>
+                            <label for="pin">Postal/Zip code*</label><br>
+                            <input type="Number" id="pin">
+                        </div>
+                        <div>
+                            <label for="number">Number *</label><br>
+                            <input type="Number" id="number">
+                        </div>
+                    </div>
+                </form>
+                <div id="con4">
+                    <a href="#" onclick=" deleteData(address)"><p>Delete delivery address</p></a>
+                    <a href="#"><p>Cancel</p></a>
+                 </div>
+            </div>
+     </div>
+     <div id="summary">
+        <p style="font-weight: bold;">Summary</p>
+        <div id="checkout">
+
+        </div>
+        <h3 id="final_value_show"></h3>
+        <p style="color: grey;">Including $100 Shipping Charges</p>
+        <button id="btn" onclick="storeData(event)">Save and Continue</button>
+    </div>
+</div>
+<footer>
+    <div><p>Not <span id="user_name"></span> ?Sign Out</p></div>
+    <div id="con6">
+        <span class="num">Need Help?</span>
+        <span class="material-symbols-outlined">
+            call
+        </span>
+        <span class="num1" >+1 646 791 3768</span>
+    </div>
+</footer>
+</body>
+</html>
+<script>
+    let estimate_total_to_pay = JSON.parse(localStorage.getItem("estimate_total_to_pay"));
+      let address=JSON.parse(localStorage.getItem("addressData"))||[];
+      let cartdata = JSON.parse(localStorage.getItem("add_to_bag")) || [];
+      let login_data = JSON.parse(localStorage.getItem("userDetails")) || [];
+      displaycartData(cartdata);
+    function storeData(event)
+    {
+            event.preventDefault();
+            let form=document.querySelector("form");
+            let fname=form.name.value;
+            let lname=form.name1.value;
+            let con=form.country.value;
+            let add=form.address.value;
+            let city=form.city.value;
+            let sta=form.state.value;
+            let pin=form.pin.value;
+            let num=form.number.value;
+
+            let obj=new displayData(fname,lname,con,add,city,sta,pin,num);
+            let address=JSON.parse(localStorage.getItem("addressData"))||[];
+            address.push(obj);
+            localStorage.setItem("addressData",JSON.stringify(address))||[];
+            location.href = "payment.html";
+           
+
+
+    }
+   function displayData(fname,lname,con,add,city,sta,pin,num)
+   {
+    this.fname=fname;
+    this.lname=lname;
+    this.country=con;
+    this.address=add;
+    this.city=city;
+    this.state=sta;
+    this.pin=pin;
+    this.number=num;
+   }
+  
+   
+   function displaycartData(cartdata)
+   {
+       cartdata.forEach(function(ele,index)
+       {
+        console.log(ele.price);
+            let td=document.createElement("div")
+            td.setAttribute("id","cartDisplay");
+            let td1=document.createElement("img");
+            td1.src=ele.image;
+            td1.style.width="50px";
+            td1.style.height="50px";
+            let td2=document.createElement("p");
+            let td3=document.createElement("p");
+            td2.innerText=ele.product;
+            td3.innerText="$"+ele.price;
+            // let total_amount_ = document.createElement("h3");
+            // total_amount_.innerText = "Total Amount : " + 
+            td.append(td1,td2,td3);
+            document.getElementById("checkout").append(td);
+
+
+       });
+   }
+   let user_Name = document.getElementById("user_name");
+   user_Name.innerText = login_data.userName;
+   let final_value_show = document.getElementById("final_value_show");
+   final_value_show.innerText = "Total : " + "$" + estimate_total_to_pay;
+
+</script>
+

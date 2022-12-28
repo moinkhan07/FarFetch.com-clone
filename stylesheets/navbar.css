@@ -1,0 +1,127 @@
+*{
+    font-family: "farfetch";
+}
+@font-face {
+    font-family: "farfetch";
+    src: url(/animated-governor-4742/fonts/Farfetch\ Basis\ Regular.ttf) format("truetype");  
+}
+
+#offerBanner{
+    width: 100%;
+    height: 45px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(236, 234, 234);
+    font-family: "farfetch";
+    font-weight: lighter;
+}
+.red{
+    color: red;
+}
+.red:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#navbarContainer{
+    width: 95%;
+    margin: auto;
+    /* border: 2px dotted red; */
+    height: 100px;
+    padding: 10px;
+}
+#navbox1{
+    width: 99%;
+    height: 90%;
+    margin: auto;
+    /* border: 1px solid green; */
+    padding: 5px;
+    display:grid;
+    grid-template-rows: repeat(2,1fr);
+    align-items: center;
+}
+.navbox1Cards{
+    width: 100%;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+}
+.div1{
+    display: flex;
+    justify-content: space-between;
+    width: 170px;
+    align-items: center;
+    /* border: 1px solid purple; */
+    gap: 20px;
+    margin-bottom: 40px;
+}
+.div1 p:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+#icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 150px; */
+    justify-content: space-between;
+    gap: 15px;
+    /* border: 1px solid purple; */
+}
+#icons img{
+    width: 30px;
+    cursor: pointer;
+}
+.account{
+    /* border: 1px solid ; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.wish_bag{
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+.shopBag{
+    display: flex;
+}
+#bagCount{
+    color: red;
+}
+#logoDiv{
+    width: 400px;
+    /* border: 1px solid purple; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logoDiv img{
+    width: 50%;
+}
+#sections{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* border: 1px solid magenta; */
+    
+}
+#sections p{
+    cursor: pointer;
+}
+#sections p:hover{
+    font-weight: bold;
+}
+#searchDiv input{
+    width: 250px;
+    height: 30px;
+    padding: 5px;
+    text-align: left;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
